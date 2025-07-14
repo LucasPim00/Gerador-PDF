@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Formulario {
+  id             Int      @id @default(autoincrement())
+  name           String
+  email          String
+  password       String
+  message        String
+  gender         String
+  interests      String
+  city           String
+  age            Int
+  phone          String
+  website        String
+  birth_date     String
+  contact_time   String
+  quantity       Int
+  favorite_color String
+  createdAt      DateTime @default(now())
+}
