@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "app/api/form/list/route.ts.bak", "app/api/form/save/route.ts.bak"  ],
   "exclude": [
     "node_modules"
   ]
